@@ -8,11 +8,6 @@ declare var $ :any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'abgular 4 with jquery';
-  toggleTitle(){
-    $('.title').slideToggle();
-    console.log("fkjanf") //
-  }
   
 
 }

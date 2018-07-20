@@ -5,10 +5,12 @@ import{MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule} fro
 import{FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { RegComponent } from './reg/reg.component';
+import { CardComponent } from './card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RegComponent
+    RegComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
