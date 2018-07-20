@@ -1,22 +1,72 @@
-.example-container {
-  display: flex;
-  flex-direction: column;
+/* RESET */
+#contact_form * { box-sizing: border-box; }
+
+/* GRID */
+.col-2 {
+    float: left;
+    padding: 0 20px;
+    width: 50%;
 }
 
-.example-container > * {
-  width: 100%;
+/* BASIC CONTACT FORM CSS */
+#contact_form input,
+#contact_form textarea {
+    height: 45px;
+    line-height: 1.4em;
+    padding-left: 20px; /* Change this to fit your label text width */
+    width: 100%;
 }
-.submit{
-	background-color:#bb133e;
-	width:40% !important;
-	margin:0 auto;
-	display:block;
+#contact_form textarea {
+    padding: 20px;
 }
-.container{
-	width:80%;
-	margin:0 auto;
-	padding:0 auto;
-	display:block;
-	background-color:#002664;
-	color:#ffffff;
+#contact_form label {
+    display: inline-block;
+    height: 45px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+#contact_form label input {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#contact_form label span {
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    padding: 0 8px;
+    pointer-events: none;
+}
+#contact_form .populated {
+    padding-left: 70px;
+}
+#contact_form input:focus + span,
+#contact_form input:active + span,
+#contact_form textarea:focus + span,
+#contact_form textarea:active + span {
+    top: -9px; /* Change this to fit your label text width */
+}
+#contact_form input[type="submit"] {
+  clear: both;
+  display: block;
+  height: auto;
+  padding: 0;
+  width: auto;
+}
+/* ANIMATION */
+#contact_form label input {
+    transition: padding 0.3s ease 0s;
+}
+#contact_form label span {
+    transition: top 0.3s ease 0s, color 0.3s ease 0s;
+}
+#contact_form input:focus,
+#contact_form textarea:focus {
+    transition: all 0.3s ease;
 }
