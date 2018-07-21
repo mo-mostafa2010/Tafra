@@ -1,0 +1,47 @@
+[
+    {
+        "name": "name 1",
+        "slug": "item-1",
+        "embed" : "gskjgbsg",
+        "image" : "https://dummyimage.com/286x180/000/fff",
+        "text" : "gakjg gkjfsg nmg dgk dg gsg sklg gsklng  gsklng ",
+        "fb" : "https://www.facebook.com",
+        "likedin" : "https://www.linkedin.com",
+        "twiter" : "https://www.twiter.com",
+        "google" : "https://www.google.com"
+    },
+    {
+        "name": "name 2",
+        "slug": "item-2",
+        "embed" : "6wD4V0rvlDI",
+        "image" : "https://dummyimage.com/286x180/000/fff",
+        "text" : "gakjg gkjfsg nmg dgk dg gsg sklg gsklng  gsklng ",
+        "fb" : "https://www.facebook.com",
+        "likedin" : "https://www.linkedin.com",
+        "twiter" : "https://www.twiter.com",
+        "google" : "https://www.google.com"
+
+    },
+    {
+        "name": "name 3",
+        "slug": "item-3",
+        "embed" : "fndfkjsf",
+        "image" : "https://dummyimage.com/286x180/000/fff",
+        "text" : "gakjg gkjfsg nmg dgk dg gsg sklg gsklng  gsklng ",
+        "fb" : "https://www.facebook.com",
+        "likedin" : "https://www.linkedin.com",
+        "twiter" : "https://www.twiter.com",
+        "google" : "https://www.google.com"
+    },
+    {
+        "name": "name 4",
+        "slug": "item-4",
+        "embed" : "fndffakjsf",
+        "image" : "https://dummyimage.com/286x180/000/fff",
+        "text" : "gakjg gkjfsg nmg dgk dg gsg sklg gsklng  gsklng ",
+        "fb" : "https://www.facebook.com",
+        "likedin" : "https://www.linkedin.com",
+        "twiter" : "https://www.twiter.com",
+        "google" : "https://www.google.com"
+    }
+]

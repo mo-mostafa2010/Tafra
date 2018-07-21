@@ -1,0 +1,18 @@
+<div *ngFor = 'let item of data'>
+	<div *ngIf='"/" + item.slug == href' class="container">
+	<div class="card col-sm-5">
+	  <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+	  <div class="card-body">
+	    <kbd class="card-title">{{item.name}}</kbd>
+	    <p class="card-text text-info"><span class="text-success bold">About: </span>{{item.text}}</p>
+	  	<div class=" d-inline-flex flex-wrap justify-content-between">
+	    	<a href="{{item.fb}}" class="fa icn fa-facebook btn btn-sm btn-circle"></a>
+	    	<a href="#" class="fa icn fa-linkedin btn btn-sm btn-circle"></a>
+	    	<a href="#" class="fa icn fa-google btn btn-sm btn-circle"></a>
+			<a href="#" class="fa icn fa-twitter btn btn-sm btn-circle"></a> <br> <br>
+	  	</div>
+	  </div>
+	</div>
+	</div>
+</div>
+

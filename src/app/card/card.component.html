@@ -1,8 +1,17 @@
-<div class="card container" style="width: 18rem;">
-  <img class="card-img-top" src="https://dummyimage.com/286x180/000/fff" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Name</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-danger">Profile</a>
-  </div>
+<div *ngFor = 'let item of data' class="d-flex center col-md-4" style="margin-bottom:20px;">
+	<div class="card col-sm-5" style="width: 18rem;">
+	  <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+	  <div class="card-body">
+	    <kbd class="card-title">{{item.name}}</kbd>
+	    <p class="card-text text-info"><span class="text-success bold">About: </span>{{item.text}}</p>
+	  	<div class=" d-inline-flex flex-wrap justify-content-between">
+	    	<a href="{{item.fb}}" target="blank" class="fa icn fa-facebook btn btn-sm btn-circle"></a>
+	    	<a href="{{item.likedin}}" target="blank" class="fa icn fa-linkedin btn btn-sm btn-circle"></a>
+	    	<a href="{{item.google}}" target="blank" class="fa icn fa-google btn btn-sm btn-circle"></a>
+			<a href="{{item.twiter}}" target="blank" class="fa icn fa-twitter btn btn-sm btn-circle"></a> <br> <br>
+	  	</div>
+	    <a routerLink="../{{item.slug}}" class="btn btn-danger">{{item.slug}}</a>
+      	<router-outlet></router-outlet>
+	  </div>
+	</div>
 </div>
