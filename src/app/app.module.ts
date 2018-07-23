@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import {HttpModule} from '@angular/http'
 import {RouterModule, Router} from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 const appRoutes : Routes = [
     {
         path:"register",
@@ -16,21 +17,26 @@ const appRoutes : Routes = [
         
     },
     {
-        path:"card",
-        component:CardComponent,
+        path:"login",
+        component:SignInComponent,
     },   
     {
         path:":slug",
         component:ProfileComponent,
         
     },
+    {
+        path:"",
+        component:CardComponent
+    }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     RegComponent,
     CardComponent,
-    ProfileComponent
+    ProfileComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

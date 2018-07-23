@@ -70,3 +70,10 @@
 #contact_form textarea:focus {
     transition: all 0.3s ease;
 }
+input.ng-invalid.ng-touched{
+  border:1px solid red ;
+}
+.error{
+  color:red;
+  margin : 1px !important;
+}
