@@ -1,7 +1,7 @@
 <div>
-  <form class="container"  #f="ngForm">
+  <form class="container col-md-8 col-md-offset-2"  #f="ngForm">
     <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group">
       <label for="inputName4">Full Name</label>
       <input
        type="name"
@@ -13,11 +13,11 @@
         required
         #name="ngModel"
           >
-          <span *ngIf="!name.valid && name.touched" class="error">this field is required</span>
+          <p *ngIf="!name.valid && name.touched" class="error">this field is required</p>
 
     </div>
 
-    <div class="form-group col-md-6">
+    <div class="form-group">
       <label for="inputUserName4">&#64;User Name</label>
       <input
         type="username"
@@ -29,12 +29,12 @@
         ngModel
         #username="ngModel"
         >
-        <span *ngIf="!username.valid && username.touched" class="error">this field is required</span>
+        <p *ngIf="!username.valid && username.touched" class="error">this field is required</p>
 
     </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group">
       <label for="inputEmail4">Email</label>
       <input
        type="email"
@@ -47,9 +47,9 @@
        email
        #email="ngModel"
        >
-         <span *ngIf="!email.valid  && email.touched" class="error">this field is required</span>
+         <p *ngIf="!email.valid  && email.touched" class="error">this field is required</p>
     </div>
-    <div class="form-group col-md-6">
+    <div class="form-group">
       <label for="inputPassword4">Password</label>
       <input
        type="password"
@@ -62,10 +62,10 @@
        #password="ngModel"
        minlength="6"
        >
-         <span *ngIf=" password.touched && password.errors.minlength" class="error">too short </span>
+         <p *ngIf=" password.touched && password.errors.minlength" class="error">too short </p>
     </div>
   </div>
-  <div class="form-group col-md-6">
+  <div class="form-group">
     <label for="inputAddress">Address</label>
     <input type="text"
      class="form-control"
@@ -73,22 +73,22 @@
        ngModel
        required
        #address="ngModel">
-        <span *ngIf="!address.valid && address.touched " class="error">this field is required</span>
+        <p *ngIf="!address.valid && address.touched " class="error">this field is required</p>
   </div>
-  <div class="form-group col-md-6">
+  <div class="form-group">
     <label for="inputPhone2">Phone Number</label>
     <input type="numbers" minlength="11" class="form-control" id="inputPhone2" placeholder="01*********" name="Phone" ngModel required
     #phone="ngModel"
     >
-      <span *ngIf=" phone.touched && phone.errors.minlength " class="error">this field is wrong</span>
+      <p *ngIf=" phone.touched && phone.errors.minlength " class="error">this field is wrong</p>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group">
       <label for="inputCity">City</label>
       <input type="text" class="form-control" id="inputCity" name="city" ngModel required #city="ngModel" >
-      <span *ngIf="!city.valid && city.touched" class="error">this field is required</span>
+      <p *ngIf="!city.valid && city.touched" class="error">this field is required</p>
     </div>
-    <div class="form-group col-md-4">
+    <div class="form-group">
       <label for="inputState">State</label>
       <select id="inputState" class="form-control" name="option"  [ngModel]="select">
         <option value="esl">Choose...</option>
@@ -96,10 +96,10 @@
       </select>
 
     </div>
-    <div class="form-group col-md-2">
+    <div class="form-group">
       <label for="inputZip">Zip</label>
       <input type="text" class="form-control" id="inputZip" name="zipcode" ngModel required #zip="ngModel" >
-      <span *ngIf="!zip.valid && zip.touched" class="error">this field is required</span>
+      <p *ngIf="!zip.valid && zip.touched" class="error">this field is required</p>
 
     </div>
   </div>
