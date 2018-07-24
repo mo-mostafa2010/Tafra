@@ -26,3 +26,7 @@
   line-height: 1.428571429;
   border-radius: 50%;
 }
+.float-right{
+  float:right;
+  margin:10px;
+}

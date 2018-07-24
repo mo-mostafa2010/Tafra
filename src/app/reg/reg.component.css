@@ -77,3 +77,6 @@ input.ng-invalid.ng-touched{
   color:red;
   margin : 1px !important;
 }
+.float-right{
+    float:right;
+}
